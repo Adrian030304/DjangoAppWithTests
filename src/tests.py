@@ -5,6 +5,7 @@ from app import Superhero
 class TestSuperhero(unittest.TestCase):
 
     # setting a setup method for fixture so we dont repeat the instantiation of an object for example
+    # this runs before every single test method
     def setUp(self):
         self.superhero = Superhero('Spiderman', 50)
 
